@@ -12,7 +12,7 @@ api = tweepy.API(auth)
 target_log_file = open('/var/log/twitter_bot/retweet_bot.log', 'a')
 
 
-search_items = ['#OpenStack', '#kubernetes', '#docker', '#netapp', '#netappateam', '#netappinsight', '#AWS', '#AWSSummit']
+search_items = ['#100DaysOfCode', '#OpenStack', '#kubernetes', '#docker', '#netapp', '#netappateam', '#netappinsight', '#AWS', '#AWSSummit']
 
 tweeted = False
 
