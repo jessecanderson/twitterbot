@@ -19,7 +19,12 @@ def tweet():
         try:
             print(line)
             if line != '\n':
-                api.update_status(line)
+                # api.update_status(line)
+                # rate_limit = api.rate_limit_status()
+                # print(rate_limit)
+
+                mentions = api.mentions_timeline
+                print(mentions)
                 sleep(900)
             else:
                 pass
@@ -27,4 +32,9 @@ def tweet():
             print(e.reason)
             sleep(2)
 
+    my_file.close
+
+
 tweet()
+
+
